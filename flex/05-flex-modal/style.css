@@ -25,6 +25,14 @@ body {
   display: flex;
 }
 
+/*
+.modal {
+  display: flex;
+  gap: 16px;
+  padding: 16px;
+}
+*/
+
 .icon {
   color: royalblue;
   font-size: 26px;
@@ -40,8 +48,13 @@ body {
   padding:0;
   margin: 10px;
   flex-shrink: 0;
-  
 }
+/*
+.icon {
+  -- this keeps the icon from getting smashed by the text --
+  flex-shrink: 0;
+}
+*/
 
 /*added*/
 .middle{
@@ -55,8 +68,19 @@ body {
   font-size: 20px;
   font-weight: bold;
   margin-bottom: 5px;
-
 }
+
+/*
+--header container should be wrapped around the button element as well in order for flex style to work --
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+*/
 
 .close-button {
   background: #eee;
@@ -75,6 +99,11 @@ body {
   margin: 10px;
   flex-shrink: 0;
 }
+
+/*.text {
+  margin-bottom: 16px;
+}
+*/
 
 /*added*/
 .mid-bottom{
