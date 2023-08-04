@@ -12,7 +12,7 @@ body {
   /* I'll give you this one for free lol */
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: center; 
 }
 
 .modal {
@@ -20,6 +20,9 @@ body {
   width: 480px;
   border-radius: 10px;
   box-shadow: 2px 4px 16px rgba(0,0,0,.2);
+  /*added*/
+  padding: 5px;
+  display: flex;
 }
 
 .icon {
@@ -33,6 +36,26 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  /*added*/
+  padding:0;
+  margin: 10px;
+  flex-shrink: 0;
+  
+}
+
+/*added*/
+.middle{
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  justify-content: center;
+}
+
+.header{
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 5px;
+
 }
 
 .close-button {
@@ -48,7 +71,19 @@ body {
   justify-content: center;
   border: 1px solid #eee;
   padding: 0;
+  /*added*/
+  margin: 10px;
+  flex-shrink: 0;
 }
+
+/*added*/
+.mid-bottom{
+  display: flex;
+  margin: 10px 0px;
+  justify-content: flex-start;
+  gap: 5px0;
+}
+
 
 button {
   cursor: pointer;
